@@ -1,0 +1,19 @@
+.customShadow{
+  box-shadow: 0 0 10px rgba(0,0,0,0,0.1);
+}
+
+.usertable{
+  @apply bg-white 
+}
+.usertable th{
+  @apply border text-base font-medium p-2;
+  font-size: 1.5rem
+}
+.usertable td{
+  @apply border text-base text-center p-3 ;
+  font-size: 1.5rem
+}
+
+.scrollbar-none::-webkit-scrollbar{
+  display: none;
+}
