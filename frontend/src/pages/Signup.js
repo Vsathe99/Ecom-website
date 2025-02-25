@@ -5,6 +5,7 @@ import { FaEyeSlash } from "react-icons/fa";
 import loginIcons from "../assest/assest/signin.gif"
 import { Link, useNavigate } from 'react-router-dom';
 import imageTobase64 from '../helpers/imageTobase64';
+import SummaryApi from '../common';
 
 import {  toast } from 'react-toastify';
 
@@ -41,7 +42,7 @@ const Signup = () => {
 
         
 
-        const dataResponse = await fetch("http://localhost:8080/api/signup",{
+        const dataResponse = await fetch(SummaryApi.signUp.url,{
             method: "POST",
             credentials: 'include',
             headers:{
