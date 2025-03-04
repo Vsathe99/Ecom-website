@@ -10,7 +10,7 @@ var cookieParser = require('cookie-parser')
 
 const app = express()
 app.use(cors({
-    origin: "https://ecom-website-10i6.onrender.com",
+    origin: "",
     credentials: true
 }))
 app.use(express.json())
